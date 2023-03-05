@@ -3,7 +3,7 @@ import React from 'react';
 let WishItem = (props) => {
     return (
         <div className='WishItem'>
-            <div>Wish</div>
+            <div><span>{props.id} </span>{props.wish}</div>
             <button>&times;</button>
 
         </div>
