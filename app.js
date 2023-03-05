@@ -10,7 +10,6 @@ app.use(bodyParser())
 const conn = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'root',
     database: 'Wishlist'
 })
 
