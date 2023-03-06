@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="site_wrapper">
-      <h1>WISH LIST</h1>
+      <h1>WISHLIST</h1>
       <div className="addWish_wrapper">
         <input ref={input} placeholder='Write wish' />
         <button onClick={postData}>Add Wish</button>
