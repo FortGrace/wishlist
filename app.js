@@ -25,11 +25,11 @@ conn.connect(err => {
 app.listen(8000, () => { console.log('app started') })
 
 let dbData;
-conn.query('SELECT * FROM Wishlist', (err, result, field) => {
-    dbData = result
-})
 
 app.get('/', (req, res) => {
+    conn.query('SELECT * FROM Wishlist', (err, result, field) => {
+        dbData = result
+    })
     res.send(dbData)
 })
 
